@@ -1,16 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 int S();
-int G();
+int C();
 int main() {
     int a,b;
-    scanf("%d\n%d",&a,&b);
-    char c;
-    scanf("%c\n",&c);
-    switch(c)
+    scanf("%d%d",&a,&b);
+    char ch;
+    fflush(stdin);
+    scanf("%c",&ch);
+    switch(ch)
     {
         case 'c':
-            printf("%d",G(a,b));
+            printf("%d",C(a,b));
             break;
         case 'd':
             printf("%d\n",S(a,b));
@@ -23,7 +24,7 @@ int S(int a,int b)
     int s=a*b;
     return s;
 }
-int G(int a,int b)
+int C(int a,int b)
 {
     int c=(a+b)*2;
     return c;
