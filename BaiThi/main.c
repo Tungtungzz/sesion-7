@@ -7,11 +7,11 @@ int main() {
     scanf("%d",&n);
     printf("+ m: ");
     scanf("%d",&m);
-    printf("The even numbers between %d and %d:\n",n,m);
+    printf("The even numbers between %d and %d:",n,m);
     for(int i=n+1;i<m;i++)
     {
         if(isEvenNumber(i)==1)
-            printf("%d\n",i);
+            printf("\n%d",i);
     }
     return 0;
 }
