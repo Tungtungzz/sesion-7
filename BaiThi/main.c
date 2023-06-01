@@ -3,7 +3,11 @@
 int isEvenNumber(int a);
 int main() {
     int n,m;
-    scanf("%d%d",&n,&m);
+    printf("Please, enter a number:\n+ n: ");
+    scanf("%d",&n);
+    printf("+ m: ");
+    scanf("%d",&m);
+    printf("The even numbers between %d and %d:\n",n,m);
     for(int i=n+1;i<m;i++)
     {
         if(isEvenNumber(i)==1)
